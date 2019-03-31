@@ -38,7 +38,7 @@ export class OtherInformation extends React.Component {
             onChange={this.handleChange}
           />
         </label>
-        <input type="text" value="text" />
+        <input type="submit" value="Submit" />
       </form>
     );
   }

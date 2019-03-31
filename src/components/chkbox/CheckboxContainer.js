@@ -34,7 +34,7 @@ export class CheckboxContainer extends React.Component {
           <React.Fragment>
             {checkboxes.map(item => (
               <div className="chk_box_container" key={item.key}>
-                <Col md={12} lg={6}>
+                <Col md={6} lg={6}>
                   <label className="form_label" key={item.key}>
                     <Checkbox
                       name={item.name}
