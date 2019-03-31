@@ -10,6 +10,12 @@ import { OtherInformation } from "./components/OtherInformation";
 import Example10Persent from "./examples/ProgressBar/Example10Percent";
 import Example70Persent from "./examples/ProgressBar/Example70Percent";
 import Example100Persent from "./examples/ProgressBar/Example100Percent";
+import ProgressBar from "./components/ProgressBar/ProgressBar";
+import Label from "./components/Label/Label";
+import EyeIcon from "./components/EyeIcon/Eyeicon";
+import ExampleOptional from "./examples/TextInput/ExampleOptional";
+import ExampleError from "./examples/TextInput/ExampleError";
+import ExampleAllFeatures from "./examples/PasswordInput/ExampleAllFeatures";
 import "./css/css.css";
 
 // Back to basic
@@ -27,10 +33,20 @@ export default class App extends Component {
           <Rubrik rubrik="Best&auml;llningsinformation" />
           <CheckboxContainer />
           <Example10Persent />
-          <div>next</div>
           <Example70Persent />
-          <div>next</div>
           <Example100Persent />
+          <ExampleOptional />
+          <ExampleError />
+          <ExampleAllFeatures />
+          /** Use test ProgressBar */
+          <ProgressBar percent={100} width={500} height={6} />
+          <Label
+            htmlFor="test"
+            label="Label test av red star and block style "
+            required
+          />
+          <Label htmlFor="test" label="Label test av block style " />
+          <EyeIcon />
         </div>
         <Route path="/VitecFetch" component={VitecFetch} />
       </Layout>
