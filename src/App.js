@@ -16,6 +16,7 @@ import EyeIcon from "./components/EyeIcon/Eyeicon";
 import ExampleOptional from "./examples/TextInput/ExampleOptional";
 import ExampleError from "./examples/TextInput/ExampleError";
 import ExampleAllFeatures from "./examples/PasswordInput/ExampleAllFeatures";
+import ExampleRegistrationForm from "./examples/RegristrationForm/ExampleRegistrationForm";
 import "./css/css.css";
 
 // Back to basic
@@ -38,6 +39,7 @@ export default class App extends Component {
           <ExampleOptional />
           <ExampleError />
           <ExampleAllFeatures />
+          <ExampleRegistrationForm />
           /** Use test ProgressBar */
           <ProgressBar percent={100} width={500} height={6} />
           <Label
