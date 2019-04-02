@@ -18,7 +18,7 @@ import ExampleError from "./examples/TextInput/ExampleError";
 import ExampleAllFeatures from "./examples/PasswordInput/ExampleAllFeatures";
 import ExampleRegistrationForm from "./examples/RegristrationForm/ExampleRegistrationForm";
 import "./css/css.css";
-
+import { fetchOffices } from "./components/fetch/fetch";
 // Back to basic
 
 export default class App extends Component {
@@ -26,7 +26,9 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    fetchOffices();
   }
+
   render() {
     return (
       <Layout>
