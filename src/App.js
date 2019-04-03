@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Route } from "react-router";
 import { Layout } from "./components/Layout";
 
-import { VitecFetch } from "./components/VitecFetch";
-
 import { Rubrik } from "./components/Rubrik";
 import { CheckboxContainer } from "./components/chkbox/CheckboxContainer";
 import { OtherInformation } from "./components/OtherInformation";
@@ -17,8 +15,11 @@ import ExampleOptional from "./examples/TextInput/ExampleOptional";
 import ExampleError from "./examples/TextInput/ExampleError";
 import ExampleAllFeatures from "./examples/PasswordInput/ExampleAllFeatures";
 import ExampleRegistrationForm from "./examples/RegristrationForm/ExampleRegistrationForm";
+
+import { SuperFetch2 } from "./components/SuperFetch2";
+import FetchHooks from "./components/hooks/FetchHooks";
 import "./css/css.css";
-import { fetchOffices } from "./components/fetch/fetch";
+
 // Back to basic
 
 export default class App extends Component {
@@ -26,7 +27,6 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    fetchOffices();
   }
 
   render() {
@@ -34,6 +34,7 @@ export default class App extends Component {
       <Layout>
         <div>
           <Rubrik rubrik="Best&auml;llningsinformation" />
+          <FetchHooks />
           <CheckboxContainer />
           <Example10Persent />
           <Example70Persent />
@@ -52,7 +53,6 @@ export default class App extends Component {
           <Label htmlFor="test" label="Label test av block style " />
           <EyeIcon />
         </div>
-        <Route path="/VitecFetch" component={VitecFetch} />
       </Layout>
     );
   }
