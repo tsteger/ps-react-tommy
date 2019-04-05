@@ -46,6 +46,7 @@ export class VitecFetch extends React.Component {
 
   render() {
     const { error, isLoaded, items } = this.state;
+    console.log("HH" + items);
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
@@ -53,11 +54,11 @@ export class VitecFetch extends React.Component {
     } else {
       return (
         <ul>
-          {items.map(item => (
+          {/* {items.map(item => (
             <li key={item.name}>
               {item.name} {item.price}
             </li>
-          ))}
+          ))} */}
         </ul>
       );
     }

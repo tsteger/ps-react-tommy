@@ -16,8 +16,9 @@ import ExampleError from "./examples/TextInput/ExampleError";
 import ExampleAllFeatures from "./examples/PasswordInput/ExampleAllFeatures";
 import ExampleRegistrationForm from "./examples/RegristrationForm/ExampleRegistrationForm";
 
-import { SuperFetch2 } from "./components/SuperFetch2";
+import { VitecFetch } from "./components/VitecFetch";
 import FetchHooks from "./components/hooks/FetchHooks";
+import Hooks from "./components/ReactHooks/myHooks";
 import "./css/css.css";
 
 // Back to basic
@@ -33,8 +34,11 @@ export default class App extends Component {
     return (
       <Layout>
         <div>
+          <Hooks />
+        </div>
+        {/* <div>
           <Rubrik rubrik="Best&auml;llningsinformation" />
-          <FetchHooks />
+      
           <CheckboxContainer />
           <Example10Persent />
           <Example70Persent />
@@ -43,7 +47,7 @@ export default class App extends Component {
           <ExampleError />
           <ExampleAllFeatures />
           <ExampleRegistrationForm />
-          /** Use test ProgressBar */
+         
           <ProgressBar percent={100} width={500} height={6} />
           <Label
             htmlFor="test"
@@ -52,7 +56,7 @@ export default class App extends Component {
           />
           <Label htmlFor="test" label="Label test av block style " />
           <EyeIcon />
-        </div>
+        </div> */}
       </Layout>
     );
   }
